@@ -43,6 +43,16 @@ enum CELL_Type{
 {
     [super viewDidLoad];
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.extendedLayoutIncludesOpaqueBars = NO;
+        self.modalPresentationCapturesStatusBarAppearance = NO;
+        self.automaticallyAdjustsScrollViewInsets = YES;
+    }
+#endif
+
     UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(leftMenuGestureRecognized:)];
     gesture.delegate = self;
     [self.view addGestureRecognizer:gesture];

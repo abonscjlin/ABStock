@@ -67,15 +67,15 @@
     [super viewDidLoad];
     //left menu
 
-//    #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-//        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
-//        {
-//            self.edgesForExtendedLayout = UIRectEdgeNone;
-//            self.extendedLayoutIncludesOpaqueBars = NO;
-//            self.modalPresentationCapturesStatusBarAppearance = NO;
-//            self.automaticallyAdjustsScrollViewInsets = YES;
-//        }
-//    #endif
+    #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+        {
+            self.edgesForExtendedLayout = UIRectEdgeNone;
+            self.extendedLayoutIncludesOpaqueBars = NO;
+            self.modalPresentationCapturesStatusBarAppearance = NO;
+            self.automaticallyAdjustsScrollViewInsets = YES;
+        }
+    #endif
     
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     

@@ -119,6 +119,8 @@
 		1814D8CC18AE0B790029FFF5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814D8CB18AE0B790029FFF5 /* MobileCoreServices.framework */; };
 		1814D8CE18AE0B860029FFF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814D8CD18AE0B860029FFF5 /* QuartzCore.framework */; };
 		1814D8D018AE0BC00029FFF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814D8CF18AE0BC00029FFF5 /* SystemConfiguration.framework */; };
+		BF3AAF3318B48C2800E6F80A /* StockProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3AAF3118B48C2800E6F80A /* StockProfileViewController.m */; };
+		BF3AAF3418B48C2800E6F80A /* StockProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3AAF3218B48C2800E6F80A /* StockProfileViewController.xib */; };
 		BF5541A718B48419006538BC /* CandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5541A618B48419006538BC /* CandleViewController.m */; };
 		BF6E9E7A18B37AE100B0E260 /* MRCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9E7918B37AE100B0E260 /* MRCircularProgressView.m */; };
 		BF98603F18B1E8F500D19DB0 /* SearchStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF98603D18B1E8F500D19DB0 /* SearchStockViewController.m */; };
@@ -338,6 +340,9 @@
 		1814D8CB18AE0B790029FFF5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1814D8CD18AE0B860029FFF5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1814D8CF18AE0BC00029FFF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BF3AAF3018B48C2800E6F80A /* StockProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockProfileViewController.h; sourceTree = "<group>"; };
+		BF3AAF3118B48C2800E6F80A /* StockProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockProfileViewController.m; sourceTree = "<group>"; };
+		BF3AAF3218B48C2800E6F80A /* StockProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockProfileViewController.xib; sourceTree = "<group>"; };
 		BF5541A518B48419006538BC /* CandleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleViewController.h; sourceTree = "<group>"; };
 		BF5541A618B48419006538BC /* CandleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleViewController.m; sourceTree = "<group>"; };
 		BF6E9E7818B37AE100B0E260 /* MRCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCircularProgressView.h; sourceTree = "<group>"; };
@@ -542,6 +547,9 @@
 				BF98603C18B1E8F500D19DB0 /* SearchStockViewController.h */,
 				BF98603D18B1E8F500D19DB0 /* SearchStockViewController.m */,
 				BF98603E18B1E8F500D19DB0 /* SearchStockViewController.xib */,
+				BF3AAF3018B48C2800E6F80A /* StockProfileViewController.h */,
+				BF3AAF3118B48C2800E6F80A /* StockProfileViewController.m */,
+				BF3AAF3218B48C2800E6F80A /* StockProfileViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -930,6 +938,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1814D86D18AE090B0029FFF5 /* right-sidebar-star-active.png in Resources */,
+				BF3AAF3418B48C2800E6F80A /* StockProfileViewController.xib in Resources */,
 				1814D86B18AE090B0029FFF5 /* right-sidebar-btn.png in Resources */,
 				1814D8C518AE09260029FFF5 /* indicators.json in Resources */,
 				1814D87418AE090B0029FFF5 /* StockQuoteTableCell.xib in Resources */,
@@ -1039,6 +1048,7 @@
 				1814D76018AE083B0029FFF5 /* main.m in Sources */,
 				1814D8BF18AE090B0029FFF5 /* SVSegmentedControl.m in Sources */,
 				1814D8A418AE090B0029FFF5 /* UIView+JDFlipImageView.m in Sources */,
+				BF3AAF3318B48C2800E6F80A /* StockProfileViewController.m in Sources */,
 				1814D87E18AE090B0029FFF5 /* StockDogEngine.m in Sources */,
 				1814D86F18AE090B0029FFF5 /* LeftMenuViewController.m in Sources */,
 				1814D89118AE090B0029FFF5 /* DoctypeChunk.m in Sources */,

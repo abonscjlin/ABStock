@@ -13,6 +13,8 @@
 #import "SearchStockViewController.h"
 #import "WatchlistViewController.h"
 #import "AppNavigationController.h"
+#import "StockProfileViewController.h"
+
 @interface LeftMenuViewController ()
 
 {
@@ -25,7 +27,7 @@
 {
     self=[super init];
     if (self) {
-        menuItems=[[NSArray alloc]initWithObjects:@"Home",@"Watchlist" ,@"Candle Chart",@"Search",nil];
+        menuItems=[[NSArray alloc]initWithObjects:@"Home",@"Watchlist" ,@"Candle Chart",@"Search",@"Realtime",nil];
         
     }
     return self;
@@ -33,6 +35,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.extendedLayoutIncludesOpaqueBars = NO;
+        self.modalPresentationCapturesStatusBarAppearance = NO;
+        self.automaticallyAdjustsScrollViewInsets = YES;
+    }
+#endif
 
 }
 -(void)viewDidLayoutSubviews
@@ -151,6 +162,13 @@
         
         SearchStockViewController *searchVC=[[SearchStockViewController alloc]init];
         AppNavigationController *appNavigationController = [[AppNavigationController alloc] initWithRootViewController:searchVC];
+        appNavigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
+        self.frostedViewController.contentViewController = appNavigationController;
+    }
+    if (indexPath.row==4) {
+        
+        StockProfileViewController *stockVC=[[StockProfileViewController alloc]init];
+        AppNavigationController *appNavigationController = [[AppNavigationController alloc] initWithRootViewController:stockVC];
         appNavigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
         self.frostedViewController.contentViewController = appNavigationController;
     }
