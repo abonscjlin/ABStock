@@ -19,8 +19,6 @@
 		1814D76F18AE083B0029FFF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814D75718AE083B0029FFF5 /* UIKit.framework */; };
 		1814D77718AE083B0029FFF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1814D77518AE083B0029FFF5 /* InfoPlist.strings */; };
 		1814D77918AE083B0029FFF5 /* ABStockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814D77818AE083B0029FFF5 /* ABStockTests.m */; };
-		1814D85C18AE090B0029FFF5 /* AutoCompleteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814D78818AE090A0029FFF5 /* AutoCompleteDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1814D85D18AE090B0029FFF5 /* CandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814D78A18AE090A0029FFF5 /* CandleViewController.m */; };
 		1814D85E18AE090B0029FFF5 /* stockDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1814D78C18AE090A0029FFF5 /* stockDB.sqlite */; };
 		1814D85F18AE090B0029FFF5 /* CacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814D78F18AE090A0029FFF5 /* CacheHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1814D86018AE090B0029FFF5 /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814D79118AE090A0029FFF5 /* Date.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -121,6 +119,7 @@
 		1814D8CC18AE0B790029FFF5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814D8CB18AE0B790029FFF5 /* MobileCoreServices.framework */; };
 		1814D8CE18AE0B860029FFF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814D8CD18AE0B860029FFF5 /* QuartzCore.framework */; };
 		1814D8D018AE0BC00029FFF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814D8CF18AE0BC00029FFF5 /* SystemConfiguration.framework */; };
+		BF5541A718B48419006538BC /* CandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5541A618B48419006538BC /* CandleViewController.m */; };
 		BF6E9E7A18B37AE100B0E260 /* MRCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9E7918B37AE100B0E260 /* MRCircularProgressView.m */; };
 		BF98603F18B1E8F500D19DB0 /* SearchStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF98603D18B1E8F500D19DB0 /* SearchStockViewController.m */; };
 		BF98604018B1E8F500D19DB0 /* SearchStockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF98603E18B1E8F500D19DB0 /* SearchStockViewController.xib */; };
@@ -157,10 +156,6 @@
 		1814D78318AE090A0029FFF5 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		1814D78418AE090A0029FFF5 /* DBConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConstant.h; sourceTree = "<group>"; };
 		1814D78518AE090A0029FFF5 /* EnginConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnginConstant.h; sourceTree = "<group>"; };
-		1814D78718AE090A0029FFF5 /* AutoCompleteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCompleteDelegate.h; sourceTree = "<group>"; };
-		1814D78818AE090A0029FFF5 /* AutoCompleteDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCompleteDelegate.m; sourceTree = "<group>"; };
-		1814D78918AE090A0029FFF5 /* CandleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleViewController.h; sourceTree = "<group>"; };
-		1814D78A18AE090A0029FFF5 /* CandleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleViewController.m; sourceTree = "<group>"; };
 		1814D78C18AE090A0029FFF5 /* stockDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = stockDB.sqlite; sourceTree = "<group>"; };
 		1814D78E18AE090A0029FFF5 /* CacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheHelper.h; sourceTree = "<group>"; };
 		1814D78F18AE090A0029FFF5 /* CacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheHelper.m; sourceTree = "<group>"; };
@@ -343,6 +338,8 @@
 		1814D8CB18AE0B790029FFF5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1814D8CD18AE0B860029FFF5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1814D8CF18AE0BC00029FFF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BF5541A518B48419006538BC /* CandleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleViewController.h; sourceTree = "<group>"; };
+		BF5541A618B48419006538BC /* CandleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleViewController.m; sourceTree = "<group>"; };
 		BF6E9E7818B37AE100B0E260 /* MRCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCircularProgressView.h; sourceTree = "<group>"; };
 		BF6E9E7918B37AE100B0E260 /* MRCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCircularProgressView.m; sourceTree = "<group>"; };
 		BF98603918B1E73700D19DB0 /* tableExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tableExampleViewController.h; path = "ABStock/Supporting Files/tableExampleViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -421,8 +418,8 @@
 		1814D75918AE083B0029FFF5 /* ABStock */ = {
 			isa = PBXGroup;
 			children = (
+				BF5541A418B48419006538BC /* CandleChartViewController */,
 				1814D78218AE090A0029FFF5 /* ASConstant */,
-				1814D78618AE090A0029FFF5 /* ChaetViewController */,
 				1814D78B18AE090A0029FFF5 /* DBFile */,
 				1814D78D18AE090A0029FFF5 /* Helper */,
 				1814D79818AE090A0029FFF5 /* Imgs */,
@@ -479,17 +476,6 @@
 				1814D78518AE090A0029FFF5 /* EnginConstant.h */,
 			);
 			path = ASConstant;
-			sourceTree = "<group>";
-		};
-		1814D78618AE090A0029FFF5 /* ChaetViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1814D78718AE090A0029FFF5 /* AutoCompleteDelegate.h */,
-				1814D78818AE090A0029FFF5 /* AutoCompleteDelegate.m */,
-				1814D78918AE090A0029FFF5 /* CandleViewController.h */,
-				1814D78A18AE090A0029FFF5 /* CandleViewController.m */,
-			);
-			path = ChaetViewController;
 			sourceTree = "<group>";
 		};
 		1814D78B18AE090A0029FFF5 /* DBFile */ = {
@@ -850,6 +836,15 @@
 			path = SVSegmentedControl;
 			sourceTree = "<group>";
 		};
+		BF5541A418B48419006538BC /* CandleChartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF5541A518B48419006538BC /* CandleViewController.h */,
+				BF5541A618B48419006538BC /* CandleViewController.m */,
+			);
+			path = CandleChartViewController;
+			sourceTree = "<group>";
+		};
 		BF6E9E7718B37AE100B0E260 /* MRCircularProgressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -999,7 +994,6 @@
 				1814D87D18AE090B0029FFF5 /* SqliteHelper.m in Sources */,
 				1814D88D18AE090B0029FFF5 /* CSSPartMatcher.m in Sources */,
 				BF6E9E7A18B37AE100B0E260 /* MRCircularProgressView.m in Sources */,
-				1814D85C18AE090B0029FFF5 /* AutoCompleteDelegate.m in Sources */,
 				1814D8AD18AE090B0029FFF5 /* MKNetworkEngine.m in Sources */,
 				1814D8B118AE090B0029FFF5 /* GTMNSString+HTML.m in Sources */,
 				1814D8B518AE090B0029FFF5 /* MWFeedItem.m in Sources */,
@@ -1013,6 +1007,7 @@
 				1814D8A218AE090B0029FFF5 /* JDFlipNumberView.m in Sources */,
 				1814D89618AE090B0029FFF5 /* NSString_HTML.m in Sources */,
 				1814D88018AE090B0029FFF5 /* WantGooEngine.m in Sources */,
+				BF5541A718B48419006538BC /* CandleViewController.m in Sources */,
 				1814D88918AE090B0029FFF5 /* YAxis.m in Sources */,
 				1814D87118AE090B0029FFF5 /* RssDetailTableViewController.m in Sources */,
 				1814D87318AE090B0029FFF5 /* StockQuoteTableCell.m in Sources */,
@@ -1050,7 +1045,6 @@
 				1814D88818AE090B0029FFF5 /* Section.m in Sources */,
 				1814D8BB18AE090B0029FFF5 /* UIView+REFrostedViewController.m in Sources */,
 				1814D8A318AE090B0029FFF5 /* JDFlipNumberViewImageFactory.m in Sources */,
-				1814D85D18AE090B0029FFF5 /* CandleViewController.m in Sources */,
 				1814D88118AE090B0029FFF5 /* YahooEngine.m in Sources */,
 				1814D8B418AE090B0029FFF5 /* MWFeedInfo.m in Sources */,
 				1814D89718AE090B0029FFF5 /* ProcessingInstructionChunk.m in Sources */,
