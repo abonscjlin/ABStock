@@ -1,0 +1,233 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><title>
+        即時走勢- WantGoo玩股網
+    </title><meta name="robots" content="noindex, nofollow" /><link type="text/css" media="all" href="/styles/realtime.css?20121017" rel="Stylesheet" /><link type="text/css" media="all" href="/styles/roundcorner/round_1.css" rel="Stylesheet" /><link type="text/css" media="all" href="/styles/custom/Red_3/fringebackground_1.css" rel="Stylesheet" /><link href="../App_Themes/Orange/img/FBwebpage.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Orange/Round.css" type="text/css" rel="stylesheet" /></head>
+    <script type="text/javascript">
+        function goAddPage() {
+            window.open('http://www.wantgoo.com/stock/add.aspx?stockNo=WTX$', '_top');
+        }
+    </script>
+    <body style="width:695px;">
+        <form name="f" method="post" action="IndexRealTime.aspx?stockno=WTX%24" id="f">
+            <div>
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzODE1OTQ4MTYPZBYCAgEPZBYEAgIPEGQQFQoH576k57WEMQfnvqTntYQyB+e+pOe1hDMH576k57WENAfnvqTntYQ1B+e+pOe1hDYH576k57WENwfnvqTntYQ4B+e+pOe1hDkI576k57WEMTAVCgExATIBMwE0ATUBNgE3ATgBOQIxMBQrAwpnZ2dnZ2dnZ2dnFgFmZAIFD2QWAgIBDw8WAh4HVmlzaWJsZWdkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUGYnRuQWRkNDpHTvK48aWoWtn0zxlhfGyJRmI=" />
+            </div>
+            
+            
+            <table cellpadding="0" cellspacing="0" style="padding-top:3px;"><tr><td>
+                <table cellpadding="0" cellspacing="0" style="margin:0px auto; height:44px; width:470px;"><tr>
+                    <td style="width:6px; height:44px;"><img width="6px" height="44px" src="/image/gray-corner-left.png" /></td>
+                    <td style=" border-top:2px solid #808080;border-bottom:2px solid #808080; background-color:#fff; vertical-align:middle; text-align:left; padding-left:10px;">
+                        <span id="b"><table cellpadding="0" cellspacing="0" style="font-weight:bold;"><tr><td style="font-size:18px;">台指期&nbsp;<span style="font-size:13px; color:#666666;">(WTX&)</span>&nbsp;&nbsp;<span><span style="font-size:18px; color:green;" id="Price">8604.0</span>&nbsp;<span style="font-size:18px; color:green;" id="Change">▼12.0</span><span style="font-size:13px; color:#333333;">(<span style="color:green;" id="Ratio">-0.14%</span>)</span></span></tr></table></span>
+                    </td>
+                    <td style="width:6px; height:44px;"><img width="6px" height="44px" src="/image/gray-corner-right.png" /></td></tr></table>
+            </td>
+            <td>
+                <table cellpadding="0" cellspacing="0" style="margin:0 0 0 2px; height:44px; width:220px;"><tr>
+                    <td style="width:6px; height:44px;"><img width="6px" height="44px" src="/image/gray-corner-left.png" /></td>
+                    <td style=" border-top:2px solid #808080;border-bottom:2px solid #808080; background-color:#fff; vertical-align:middle;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:80px; text-align:right; padding-right:2px;">
+                                    
+                                </td>
+                                <td style="width:100%; text-align:center;">
+                                    <input type="image" name="btnAdd" id="btnAdd" onmouseover="this.src='/image/btn_addtrace_mo.png'" onmouseout="this.src='/image/btn_addtrace.png'" src="/image/btn_addtrace.png" alt="加到我的追蹤" onclick="goAddPage();" style="border-width:0px;height:29px;width:96px;cursor: pointer; cursor: hand" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width:6px; height:44px;"><img width="6px" height="44px" src="/image/gray-corner-right.png" /></td></tr></table>
+            </td></tr></table>
+            
+            <div style="padding:5px 0; width:695px; margin-right:3px;">
+                <div style="margin:5px auto; font-size:13px; background-color:#fff;">
+                    <span id="a"><table cellpadding="0" cellspacing="0" class="tb_indexdata2"><tr class="name"><td>時間</td><td>開盤</td><td>最高</td><td>最低</td><td>昨收</td><td>成交量</td><td>成交量(預估)</td></tr><tr class="data"><td id="Time">13:45</td><td id="Open" style="color:green;">8610.00</td><td id="High" style="color:red;">8625.00</td><td id="Low" style="color:green;">8577.00</td><td id="Last">8616.00</td><td id="Volume">0(億)</td><td id="VolumeEstimate">-----</td></tr></table></span>
+                    <table cellpadding="0" cellspacing="0" style="width:685px; table-layout:fixed;">
+                        <tr>
+                            <td style="width:470px;">
+                                <div style="border:1px solid #F3AB24; margin-top:5px; width:470px; height:275px;">
+                                    
+                                    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                                    <script type="text/javascript" src="/jscript/highstock-1.2.2/highstock.js"></script>
+                                    <script type="text/javascript" src="/jscript/highstock-1.2.2/modules/exporting.js"></script>
+                                    <div id="r_NoVolume">
+                                        
+                                        <script type="text/javascript">
+                                            var chart;
+                                            $(document).ready(function () {
+                                                              window.chart = new Highcharts.StockChart({
+                                                                                                       chart: {
+                                                                                                       renderTo: 'RTchart',
+                                                                                                       plotBorderWidth: 1
+                                                                                                       },
+                                                                                                       scrollbar: {
+                                                                                                       enabled: false
+                                                                                                       },
+                                                                                                       navigator: {
+                                                                                                       enabled: false
+                                                                                                       },
+                                                                                                       title: {
+                                                                                                       text: '台指期 (WTX&)',
+                                                                                                       floating: true,
+                                                                                                       x: -50,
+                                                                                                       top: 20
+                                                                                                       },
+                                                                                                       subtitle: {
+                                                                                                       text: '玩股網 www.wantgoo.com',
+                                                                                                       floating: true,
+                                                                                                       x: 100,
+                                                                                                       y: 15
+                                                                                                       },
+                                                                                                       exporting: {
+                                                                                                       enabled: false
+                                                                                                       },
+                                                                                                       rangeSelector : {
+                                                                                                       enabled: false,
+                                                                                                       inputEnabled : false
+                                                                                                       },
+                                                                                                       yAxis: [{
+                                                                                                               opposite: true,
+                                                                                                               plotLines : [{
+                                                                                                                            value : 8616,
+                                                                                                                            color : 'black',
+                                                                                                                            dashStyle : 'shortdash',
+                                                                                                                            width : 1,
+                                                                                                                            label : {text : '昨收'},
+                                                                                                                            zIndex : 2
+                                                                                                                            }],
+                                                                                                               labels: {
+                                                                                                               formatter: function() {
+                                                                                                               var percent = (this.value - 8616)*100/8616
+                                                                                                               if (percent > 0) {
+                                                                                                               return this.value  +'<br /><span style="color:red;">+' + Highcharts.numberFormat(percent, 1, '.') +'%</span>';
+                                                                                                               } else if (percent < 0) {
+                                                                                                               return this.value  +'<br /><span style="color:green;">' + Highcharts.numberFormat(percent, 1, '.') +'%</span>';
+                                                                                                               } else if (percent = 0) {
+                                                                                                               return this.value  +'<br />0.0%</span>';
+                                                                                                               }
+                                                                                                               }
+                                                                                                               }
+                                                                                                               }],
+                                                                                                       xAxis: {
+                                                                                                       gridLineWidth: 1
+                                                                                                       },
+                                                                                                       tooltip: {
+                                                                                                       yDecimals : 2,
+                                                                                                       crosshairs: [{
+                                                                                                                    width: 1,
+                                                                                                                    color: 'blue'
+                                                                                                                    }, {
+                                                                                                                    width: 1,
+                                                                                                                    color: 'blue'
+                                                                                                                    }]
+                                                                                                       },
+                                                                                                       series: [{
+                                                                                                                name: '台指期 (WTX&)',
+                                                                                                                data: [[1389948300000,8610],[1389948360000,8620],[1389948420000,8623],[1389948480000,8623],[1389948609000,8618],[1389948669000,8621],[1389948739000,8622],[1389948839000,8620],[1389948915000,8617],[1389949011000,8619],[1389949071000,8621],[1389949301000,8613],[1389949361000,8607],[1389949421000,8603],[1389949482000,8602],[1389949542000,8604],[1389949603000,8600],[1389949664000,8605],[1389949913000,8609],[1389949973000,8614],[1389950033000,8615],[1389950094000,8613],[1389950155000,8607],[1389950215000,8607],[1389950283000,8607],[1389950345000,8609],[1389950411000,8608],[1389950600000,8606],[1389950660000,8606],[1389950723000,8607],[1389950785000,8607],[1389950846000,8608],[1389950910000,8607],[1389950970000,8604],[1389951034000,8605],[1389951100000,8605],[1389951169000,8607],[1389951230000,8605],[1389951290000,8599],[1389951429000,8598],[1389951491000,8599],[1389951556000,8598],[1389951616000,8594],[1389951677000,8594],[1389951743000,8593],[1389951803000,8591],[1389951863000,8591],[1389951923000,8588],[1389951983000,8586],[1389952044000,8586],[1389952104000,8585],[1389952164000,8585],[1389952224000,8582],[1389952284000,8581],[1389952346000,8582],[1389952406000,8582],[1389952466000,8584],[1389952526000,8583],[1389952596000,8584],[1389952657000,8579],[1389952719000,8581],[1389952788000,8582],[1389952856000,8584],[1389952919000,8584],[1389952985000,8583],[1389953045000,8585],[1389953105000,8583],[1389953167000,8581],[1389953229000,8581],[1389953289000,8584],[1389953351000,8582],[1389953413000,8582],[1389953485000,8584],[1389953547000,8585],[1389953611000,8585],[1389953673000,8586],[1389953746000,8587],[1389953817000,8585],[1389953879000,8582],[1389953953000,8585],[1389954028000,8586],[1389954123000,8586],[1389954185000,8584],[1389954253000,8585],[1389954323000,8585],[1389954386000,8585],[1389954449000,8587],[1389954516000,8589],[1389954578000,8588],[1389954640000,8586],[1389954706000,8587],[1389954768000,8585],[1389954829000,8585],[1389954894000,8586],[1389954957000,8589],[1389955028000,8587],[1389955089000,8588],[1389955153000,8586],[1389955214000,8587],[1389955282000,8586],[1389955371000,8588],[1389955441000,8587],[1389955503000,8586],[1389955568000,8583],[1389955628000,8584],[1389955688000,8585],[1389955755000,8586],[1389955872000,8584],[1389955949000,8585],[1389956032000,8584],[1389956093000,8585],[1389956170000,8586],[1389956238000,8590],[1389956301000,8591],[1389956361000,8593],[1389956421000,8594],[1389956483000,8598],[1389956545000,8597],[1389956607000,8597],[1389956669000,8598],[1389956731000,8598],[1389956794000,8598],[1389956857000,8597],[1389956921000,8598],[1389956981000,8598],[1389957042000,8598],[1389957105000,8597],[1389957165000,8598],[1389957226000,8597],[1389957286000,8597],[1389957349000,8597],[1389957431000,8598],[1389957504000,8598],[1389957601000,8598],[1389957662000,8599],[1389957729000,8599],[1389957789000,8600],[1389957852000,8599],[1389957913000,8599],[1389957974000,8599],[1389958034000,8604],[1389958097000,8602],[1389958160000,8604],[1389960340000,8606],[1389960403000,8605],[1389960468000,8605],[1389960544000,8604],[1389960607000,8603],[1389960676000,8604],[1389960736000,8603],[1389960797000,8603],[1389960858000,8601],[1389960921000,8600],[1389960991000,8602],[1389961051000,8604],[1389961111000,8604],[1389961171000,8605],[1389961231000,8606],[1389961299000,8608],[1389961363000,8609],[1389961427000,8608],[1389961488000,8608],[1389961554000,8609],[1389961618000,8610],[1389961689000,8609],[1389961755000,8608],[1389961847000,8608],[1389961908000,8609],[1389961981000,8608],[1389962041000,8610],[1389962101000,8610],[1389962167000,8610],[1389962230000,8609],[1389962295000,8611],[1389962357000,8615],[1389962417000,8617],[1389962483000,8615],[1389962549000,8615],[1389962622000,8614],[1389962685000,8614],[1389962752000,8615],[1389962815000,8614],[1389962883000,8614],[1389962943000,8610],[1389963006000,8611],[1389963066000,8611],[1389963158000,8611],[1389963228000,8611],[1389963301000,8612],[1389963371000,8612],[1389963442000,8611],[1389963513000,8611],[1389963583000,8609],[1389963650000,8608],[1389963710000,8607],[1389963773000,8603],[1389963840000,8604],[1389963900000,8603],[1389963969000,8604],[1389964029000,8605],[1389964089000,8606],[1389964150000,8608],[1389964211000,8610],[1389964271000,8611],[1389964349000,8610],[1389964416000,8607],[1389964480000,8607],[1389964557000,8608],[1389964621000,8608],[1389964681000,8605],[1389964742000,8606],[1389964808000,8606],[1389964891000,8606],[1389964961000,8605],[1389965028000,8607],[1389965095000,8605],[1389965156000,8604],[1389965217000,8605],[1389965284000,8607],[1389965346000,8608],[1389965406000,8607],[1389965466000,8603],[1389965530000,8603],[1389965590000,8605],[1389965650000,8604],[1389965710000,8605],[1389965773000,8606],[1389965833000,8605],[1389965897000,8604],[1389965957000,8606],[1389966017000,8605],[1389966078000,8604],[1389966138000,8605],[1389966201000,8604],[1389966262000,8605]]
+                                                                                                                }]
+                                                                                                       });
+                                                              });  
+                                            </script> 
+                                        
+                                    </div>
+                                    
+                                    <div id="RTchart" style="WIDTH: 470px; HEIGHT: 273px"></div>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td style="width:215px; text-align:left; padding-left:5px;">
+                                <div style="margin-bottom:1px;margin-left:11px;">
+                                    <a class="updatelink" href='http://www.wantgoo.com/stock/IndexRealTime.aspx?stockno=WTX$'><span id="ElapseTime">立即</span> 更新</a>
+                                        </div>
+                                        
+                                        <div id="ad1" style=" padding-top:15px; padding-left:10px">
+                                        <script type="text/javascript"><!--
+                                        google_ad_client = "ca-pub-6240822095534788";
+                                        google_ad_host = "ca-host-pub-7475939466736018";
+                                        google_ad_host_channel = "9508948554";
+                                        /* 即時指數旁200x200（成果） */
+                                        google_ad_slot = "1110909503";
+                                        google_ad_width = 200;
+                                        google_ad_height = 200;
+                                        //-->
+                                        </script>
+                                        <script type="text/javascript"
+                                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                                        </script>
+                                        </div>
+                                        </td></tr></table>
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                        <script type="text/javascript">    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+                                        <script type="text/javascript">    try { var pageTracker = _gat._getTracker("UA-6993262-2"); pageTracker._trackPageview(); } catch (err) { }</script>
+                                        
+                                        
+                                        <span id="jsUpdate">
+                                        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+                                        <script type="text/javascript">    
+                                        var isFocus = 1;
+                                        window.onfocus = function focus() { isFocus = 1; }; window.onblur = function blur() { isFocus = 0; };
+                                        //window.setInterval("if (1==1){UpdateData();} else {isRefresh=1;};t=30;", 30000);
+                                        window.setInterval("if (isFocus==1){UpdateData();} else {isRefresh=1;};t=30;", 30000);
+                                        window.setInterval("t-=1;$('#ElapseTime').html(' '+t+ ' 秒');", 1000);
+                                        window.setInterval("location.reload();", 300000);
+                                        var isRefresh = 0;
+                                        var t = 30;
+                                        function UpdateData() {
+                                        if (isRefresh == 1) { location.reload(); };
+                                        $.ajax({
+                                        type: "post",
+                                        cache: false,
+                                        url: "http://www.wantgoo.com/GetData.asmx/StockNoData" + '?stockno=WTX$&dt=' + new Date().getTime(),
+                                        success: function (response) {
+                                        var x;
+                                        var y;
+                                        $.each(response, function (key, value) {
+                                        if (key == "Price") { y = value; };
+                                        if (key == "utcTime") { x = value; };
+                                        if (value == "red" || value == "green") {
+                                        $("#Price").parents("span").effect("highlight", { color: value }, 1500);
+                                        $("#Price").css("color", value);
+                                        $("#Change").css("color", value);
+                                        $("#Ratio").css("color", value);
+                                        }
+                                        else if (value == "black") {
+                                        $("#Price").parents("span").effect("highlight", { color: "yellow" }, 1500);
+                                        $("#Price").css("color", value);
+                                        $("#Change").css("color", value);
+                                        $("#Ratio").css("color", value);
+                                        }
+                                        else if (value == "redwhite" || value == "greenwhite") {
+                                        $("#Price").parents("tr").effect("highlight", { color: value }, 1500);
+                                        $("#Price").css("color", "white");
+                                        $("#Change").css("color", "white");
+                                        $("#Ratio").css("color", "white");
+                                        $("#Price").css("background-color", value);
+                                        $("#Change").css("background-color", value);
+                                        $("#Ratio").css("background-color", value);
+                                        }
+                                        else {
+                                        $('#' + key).html(value);
+                                        };
+                                        });
+                                        //window.chart.series[0].addPoint([x, y]);
+                                        //window.options.series[0].data.push([x, y]);
+                                        //window.chart.redraw();
+                                        }
+                                        });
+                                        };
+                                        </script>
+                                        </span>
+                                        </form>
+                                        </body>
+                                        </html>
+                                        
